@@ -27,7 +27,7 @@ namespace Plugin.FilePicker
 
         public async Task<FileData> PickFile()
         {
-            var media = await TakeMediaAsync("file/*", Intent.ActionGetContent);
+            var media = await TakeMediaAsync("file/pdf", Intent.ActionGetContent);
 
             return media;
         }
