@@ -76,15 +76,7 @@ namespace Plugin.FilePicker
 				throw new InvalidOperationException("Only one operation can be active at a time");
 
 			var allowedUTIs = new string[] {
-				UTType.UTF8PlainText,
-				UTType.PlainText,
-				UTType.RTF,
-				UTType.PNG,
-				UTType.Text,
-				UTType.PDF,
-				UTType.Image,
-				UTType.UTF16PlainText,
-				UTType.FileURL
+				UTType.PDF
 			};
 
 			UIDocumentMenuViewController importMenu =
